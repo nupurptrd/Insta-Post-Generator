@@ -1,0 +1,240 @@
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python prompt.py
+  File "C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt\prompt.py", line 21
+    print(f"Key loaded: {my_key[:5]}****") # Prints only the start for safety
+    ^
+IndentationError: expected an indented block after 'if' statement on line 20
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python api.py
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt\api.py", line 2, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'       
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python -m venv venv
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> .\venv\Scripts\activate
+.\venv\Scripts\activate : File 
+C:\Users\DELL\Desktop\Sunbots-
+Trainning\try\Prompt\venv\Scripts\Activate.ps1      
+cannot be loaded because running scripts is
+disabled on this system. For more information, see  
+about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.      
+At line:1 char:1
++ .\venv\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [  
+   ], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess    
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> .\venv\Scripts\activate                         
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> pip install google-genai python-dotenv Pillow
+Collecting google-genai
+  Using cached google_genai-1.59.0-py3-none-any.whl.metadata (53 kB)
+Collecting python-dotenv
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting Pillow
+  Using cached pillow-12.1.0-cp312-cp312-win_amd64.whl.metadata (9.0 kB)
+Collecting anyio<5.0.0,>=4.8.0 (from google-genai)
+  Using cached anyio-4.12.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting google-auth<3.0.0,>=2.47.0 (from google-auth[requests]<3.0.0,>=2.47.0->google-genai)
+  Using cached google_auth-2.47.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting httpx<1.0.0,>=0.28.1 (from google-genai)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting pydantic<3.0.0,>=2.9.0 (from google-genai)
+  Using cached pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting requests<3.0.0,>=2.28.1 (from google-genai)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting tenacity<9.2.0,>=8.2.3 (from google-genai)
+  Using cached tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+Collecting websockets<15.1.0,>=13.0.0 (from google-genai)
+  Using cached websockets-15.0.1-cp312-cp312-win_amd64.whl.metadata (7.0 kB)
+Collecting typing-extensions<5.0.0,>=4.11.0 (from google-genai)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting distro<2,>=1.7.0 (from google-genai)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting sniffio (from google-genai)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting idna>=2.8 (from anyio<5.0.0,>=4.8.0->google-genai)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth<3.0.0,>=2.47.0->google-auth[requests]<3.0.0,>=2.47.0->google-genai)
+  Using cached pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth<3.0.0,>=2.47.0->google-auth[requests]<3.0.0,>=2.47.0->google-genai)
+  Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting certifi (from httpx<1.0.0,>=0.28.1->google-genai)
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1.0.0,>=0.28.1->google-genai)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.28.1->google-genai)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.9.0->google-genai)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.9.0->google-genai)
+  Using cached pydantic_core-2.41.5-cp312-cp312-win_amd64.whl.metadata (7.4 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.9.0->google-genai)
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.28.1->google-genai)
+  Using cached charset_normalizer-3.4.4-cp312-cp312-win_amd64.whl.metadata (38 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.28.1->google-genai)
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3.0.0,>=2.47.0->google-auth[requests]<3.0.0,>=2.47.0->google-genai)
+  Using cached pyasn1-0.6.2-py3-none-any.whl.metadata (8.4 kB)
+Using cached google_genai-1.59.0-py3-none-any.whl (719 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Using cached pillow-12.1.0-cp312-cp312-win_amd64.whl (7.0 MB)
+Using cached anyio-4.12.1-py3-none-any.whl (113 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached google_auth-2.47.0-py3-none-any.whl (234 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)  
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached pydantic-2.12.5-py3-none-any.whl (463 kB)
+Using cached pydantic_core-2.41.5-cp312-cp312-win_amd64.whl (2.0 MB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached tenacity-9.1.2-py3-none-any.whl (28 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached websockets-15.0.1-cp312-cp312-win_amd64.whl (176 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB) 
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached certifi-2026.1.4-py3-none-any.whl (152 kB)
+Using cached charset_normalizer-3.4.4-cp312-cp312-win_amd64.whl (107 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)     
+Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached rsa-4.9.1-py3-none-any.whl (34 kB)     
+Using cached typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)    
+Using cached pyasn1-0.6.2-py3-none-any.whl (83 kB)  
+Installing collected packages: websockets, urllib3, typing-extensions, tenacity, sniffio, python-dotenv, pyasn1, Pillow, idna, h11, distro, charset_normalizer, certifi, annotated-types, typing-inspection, rsa, requests, pydantic-core, pyasn1-modules, httpcore, anyio, pydantic, hting-extensions-4.15.0 typing-inspection-0.4.2 ing-extensions-4.15.0 typing-inspection-0.4.2 urllib3-2.6.3 websockets-15.0.1
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python api.py
+Key not found! Did you name the file '.env'?
+(venv) PS Cpip install google-genai python-dotenv Pillow^Cmpt>
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> ^C
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python api.py
+Key loaded: AIzaS****
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+  File "C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt\prompt.py", line 32
+    print(f"Key loaded: {my_key[:5]}****") # Prints only the start for safety
+    ^
+IndentationError: expected an indented block after 'if' statement on line 31
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> python api.py   
+Key loaded: AIzaS****
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}           Python prompt.pynv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt>
+AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: name 'prompt' is not defined
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: Models.generate_content() got an unexpected keyword argument 'prompt'
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ No images returned by the model.
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 'GenerateImagesConfig' object has no attribute 'tools'
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 'GenerateImagesConfig' object has no attribute 'tools'
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/imagen-3 is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/Gemini 2.5 Flash Image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/Gemini 2.5 Flash Image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+  File "C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt\prompt.py", line 122
+    output_mime_type="image/png"
+                     ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 1 validation error for GenerateImagesConfig
+content
+  Extra inputs are not permitted [type=extra_forbidden, input_value=["Create a professional I...d this Holi festival'."], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/extra_forbidden
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 1 validation error for GenerateImagesConfig
+content
+  Extra inputs are not permitted [type=extra_forbidden, input_value=["Create a professional I...d this Holi festival'."], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/extra_forbidden
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 1 validation error for GenerateImagesConfig
+content
+  Extra inputs are not permitted [type=extra_forbidden, input_value=["Create a professional I...d this Holi festival'."], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/extra_forbidden
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+
+🚀 Generating image for boAt...
+❌ No images returned by the model.
+(venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
+🔐 Key loaded: AIzaS****
+--- 📱 Instagram Post Generator ---
+
+🚀 Generating image for boAt...
+🚀 Generating image with gemini-2.5-flash-image...
+✅ Success! Post saved as: post_boAt.png
