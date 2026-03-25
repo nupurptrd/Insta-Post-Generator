@@ -125,34 +125,30 @@ Key loaded: AIzaS****
 🚀 Generating image for boAt...
 ❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
 (venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
-AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
+
 🔐 Key loaded: AIzaS****
 --- 📱 Instagram Post Generator ---
 
 🚀 Generating image for boAt...
 ❌ An error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-image is not found for API version v1beta, or is not supported for predict. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}           Python prompt.pynv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt>
-AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
 🔐 Key loaded: AIzaS****
 --- 📱 Instagram Post Generator ---
 
 🚀 Generating image for boAt...
 ❌ An error occurred: name 'prompt' is not defined
 (venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
-AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
 🔐 Key loaded: AIzaS****
 --- 📱 Instagram Post Generator ---
 
 🚀 Generating image for boAt...
 ❌ An error occurred: Models.generate_content() got an unexpected keyword argument 'prompt'
 (venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
-AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
 🔐 Key loaded: AIzaS****
 --- 📱 Instagram Post Generator ---
 
 🚀 Generating image for boAt...
 ❌ No images returned by the model.
 (venv) PS C:\Users\DELL\Desktop\Sunbots- Trainning\try\Prompt> Python prompt.py
-AIzaSyA_0ZSFZ6v0519C0szoDhSd2fwsw7EMstY
 🔐 Key loaded: AIzaS****
 --- 📱 Instagram Post Generator ---
 
